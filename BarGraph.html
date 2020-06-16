@@ -1,0 +1,27 @@
+<head>
+	<script src="plotly-latest.min.js"></script>
+</head>
+<body>
+	<div id="plotDiv" style="width:1160px;height:726px;"></div>
+</body>
+
+<script>
+
+var trace1 = {
+	x: ['BernCo Population'],
+	y: [340109],
+	name: 'Population Female',
+	type: 'bar'
+};
+var trace2 = {
+	x: ['BernCo Population'],
+	y: [326983],
+	name: 'Population Male',
+	type: 'bar'
+};
+var data = [trace1, trace2]
+var layout = {barmode: 'stack'};
+
+Plotly.newPlot('plotDiv', data, layout);
+
+</script>
